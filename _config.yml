@@ -1,55 +1,82 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you: 
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+<!DOCTYPE html>
+<html lang="en">
 
-title: Your awesome title
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "Fludex" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System-Fludex</title>
+    <link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <!-- https://fonts.google.com/ -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/templatemo-video-catalog.css">
+<!--
+TemplateMo 552 Video Catalog
+https://templatemo.com/tm-552-video-catalog
+-->
+</head>
 
-# Build settings
-theme: minima
-plugins:
-  - jekyll-feed
+<body>
+    <div class="tm-page-wrap mx-auto">
+        <div class="position-relative">
+            <div class="position-absolute tm-site-header">
+                <div class="container-fluid position-relative">
+                    <div class="row">
+                        <div class="col-7 col-md-4">
+                            <a href="index.html" class="tm-bg-black text-center tm-logo-container">
+                                <i class="fas fa-video tm-site-logo mb-3"></i>
+                                <h1 class="tm-site-name">System-Fludex</h1>
+                            </a>
+                        </div>
+                        <div class="col-5 col-md-8 ml-auto mr-0">
+                            <div class="tm-site-nav">
+                                <nav class="navbar navbar-expand-lg mr-0 ml-auto" id="tm-main-nav">
+                                    <button class="navbar-toggler tm-bg-black py-2 px-3 mr-0 ml-auto collapsed" type="button"
+                                        data-toggle="collapse" data-target="#navbar-nav" aria-controls="navbar-nav"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        <span>
+                                            <i class="fas fa-bars tm-menu-closed-icon"></i>
+                                            <i class="fas fa-times tm-menu-opened-icon"></i>
+                                        </span>
+                                    </button>
+                                    <div class="collapse navbar-collapse tm-nav" id="navbar-nav">
+                                        <ul class="navbar-nav text-uppercase">
+                                            <li class="nav-item active">
+                                                <a class="nav-link tm-nav-link" href="#">System-Fludex <span class="sr-only">(current)</span></a>
+                                            </li>
+                
+                                            <li class="nav-item">
+                                                <a class="nav-link tm-nav-link" href="contact.html">Discord</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tm-welcome-container text-center text-white">
+                <div class="tm-welcome-container-inner">
+                    <p class="tm-welcome-text mb-1 text-white">System Fludex</p>
+                    <p class="tm-welcome-text mb-5 text-white">Scripting for fun.</p>
+                    <p class="tm-welcome-text mb-3 text-white">Press "Discord" on the top right to join the server.</p>
+                    </a>
+                </div>
+            </div>
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+            <div id="tm-video-container">
+                <video autoplay muted loop id="tm-video">
+                    <!-- <source src="video/sunset-timelapse-video.mp4" type="video/mp4"> -->
+                        <source src="video/Black_-_13495.mp4" type="video/mp4">
+                </video>    
+            </div>
+            
+            <i id="tm-video-control-button" class="fas fa-pause"></i>
+        </div>
+
+        
+    </script>
+</body>
+
+</html>
